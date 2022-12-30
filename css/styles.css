@@ -44,7 +44,7 @@ img {
 	width: 1158px;
 	padding-left: 15px;
 	padding-right: 15px;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -64,6 +64,11 @@ body {
 
 .link {
 	text-decoration: none;
+}
+
+.section {
+	padding: 120px 0;
+	/* padding-bottom: 120px; */
 }
 
 /* ------ HEADER ------- */
@@ -137,13 +142,13 @@ body {
 /* --------HERO--------- */
 .hero {
 	background-color: var(--colorHeadings);
+	padding: 188px 0;
 }
 
-.hero-container {
+/* .hero-container {
 	display: flex;
 	flex-direction: column;
-	padding: 188px;
-}
+} */
 
 .hero-title {
 	font-weight: var(--font-bold);
@@ -157,6 +162,7 @@ body {
 }
 
 .hero-btn {
+	display: flex;
 	font-family: inherit;
 	font-weight: var(--font-medium);
 	font-size: var(--font-size-btn);
@@ -167,6 +173,8 @@ body {
 	cursor: pointer;
 	padding: 16px 32px;
 	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -179,7 +187,8 @@ body {
 
 /* ------features------- */
 .features {
-	padding: 120px 0;
+	padding-bottom: 0;
+	/* margin-top: 120px; */
 }
 
 .features-list {
@@ -210,9 +219,6 @@ body {
 }
 
 /* ------PRODUCTION------- */
-.production {
-	padding-bottom: 120px;
-}
 
 .production-title {
 	margin-bottom: 72px;
@@ -238,7 +244,6 @@ body {
 /* --------TEAM--------- */
 .team {
 	background-color: #f4f4fd;
-	padding-bottom: 120px;
 }
 
 .team-list {
@@ -262,7 +267,6 @@ body {
 
 .team-title {
 	text-align: var(--tittle-align);
-	padding-top: 120px;
 	margin-bottom: 72px;
 }
 
@@ -278,11 +282,13 @@ body {
 }
 
 /* ============ PORTFOLIO ============ */
+.btns-portfolio {
+	padding-top: 96px;
+	/* padding-bottom: 120px; */
+}
 
 .btn-list {
-	padding-top: 59px;
-	padding-bottom: 72px;
-	margin: 0 auto;
+	margin-bottom: 72px;
 	justify-content: center;
 }
 
@@ -312,7 +318,6 @@ body {
 
 .portfolio-list {
 	flex-wrap: wrap;
-	padding-bottom: 120px;
 	gap: 24px;
 }
 
@@ -328,6 +333,7 @@ body {
 
 .portfolio-text-wrapper {
 	border: 1px solid #e7e9fc;
+	border-top: none;
 	padding: 32px 0;
 	padding-left: 16px;
 }
